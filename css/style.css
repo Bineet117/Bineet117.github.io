@@ -41,6 +41,17 @@
 
 
 /*** Button ***/
+.custom-button-resume {
+    color: #333; /* Dark color for the resume icon and text */
+    border-color: #333; /* Border color matches the text color */
+}
+
+.custom-button-resume:hover {
+    background-color: #333; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+
 .custom-button-github {
     color: #333; /* GitHub icon color */
     border-color: #333;
@@ -119,6 +130,18 @@
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         padding: 10px 0;
+    }
+}
+
+@media (max-width: 510px) {
+    .btn.btn-outline-secondary::after {
+        content: '';
+    }
+    .custom-button-linkedin, .custom-button-github, .custom-button-resume {
+        font-size: 0;
+    }
+    .custom-button-linkedin i, .custom-button-github i, .custom-button-resume i {
+        font-size: initial;
     }
 }
 
