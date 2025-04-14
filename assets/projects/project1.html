@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Price Prediction | Bineet's Portfolio</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body class="project-page">
+  <!-- Project Header with Larger Rotating Images -->
+  <header class="project-header">
+    <div class="container">
+      <div class="header-content animate__animated animate__fadeIn">
+        <div class="header-text">
+          <a href="../../index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+          </a>
+          <h1>Laptop Price Prediction</h1>
+          <div class="project-meta">
+            <span class="category">Machine Learning</span>
+            <span class="date">2023</span>
+          </div>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>XGBoost</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+          </div>
+        </div>
+        <div class="header-image-container">
+          <img src="../images/laptop_project_1.png" alt="Laptop Price Prediction" class="rotating-image active">
+          <img src="../images/laptop_project_2.png" alt="Feature Importance" class="rotating-image">
+          <img src="../images/laptop_project_3.png" alt="Feature Importance" class="rotating-image">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="project-content container">
+    <main class="project-details">
+      <section data-aos="fade-up">
+        <h2>About the Project</h2>
+        <p>The laptop market is influenced by numerous factors including brand reputation, hardware specifications, market demand, and technological advancements. Predicting laptop prices accurately is challenging due to the complexity and variability of these factors.</p>
+        <p>This project leverages a data-driven approach using machine learning algorithms to develop a robust model for accurate laptop price predictions, providing valuable insights for consumers and sellers alike.</p>
+      </section>
+
+      <div class="project-gallery">
+        <img src="../images/laptop_project_1.png" alt="Data Visualization" data-aos="fade-up" data-aos-delay="100">
+        <img src="../images/laptop_project_2.png" alt="Model Performance" data-aos="fade-up" data-aos-delay="200">
+      </div>
+
+      <section data-aos="fade-up">
+        <h2>Dataset Description</h2>
+        <ul>
+          <li><strong>Company:</strong> Name of the company</li>
+          <li><strong>TypeName:</strong> Type of laptop (Notebook, Gaming, Ultrabook, etc.)</li>
+          <li><strong>Inches:</strong> Size of the laptop</li>
+          <li><strong>ScreenResolution:</strong> Laptop screen resolution</li>
+          <li><strong>Cpu:</strong> Processor specifications</li>
+          <li><strong>Ram:</strong> Amount of RAM</li>
+          <li><strong>Memory:</strong> Storage capacity/type</li>
+          <li><strong>Gpu:</strong> Graphics processor specifications</li>
+          <li><strong>OpSys:</strong> Operating system installed</li>
+          <li><strong>Weight:</strong> Laptop weight</li>
+          <li><strong>Price:</strong> Target variable for prediction</li>
+        </ul>
+      </section>
+      <br>
+      <section data-aos="fade-up">
+        <h2>Technical Details</h2>
+        <h3>Data Cleaning and Insights</h3>
+        <ul>
+          <li>Removed units (e.g., GB from RAM column, kg from Weight column) and changed data types accordingly</li>
+          <li>Most common laptop type is Notebook (55.8%), likely due to its affordability</li>
+          <li>Created a new column, PPI (Pixels Per Inch), to measure display sharpness and clarity</li>
+          <li>Touchscreen laptops tend to be priced higher</li>
+          <li>Most people prefer laptops with 8GB RAM, likely due to budget considerations</li>
+          <li>Nvidia processors are generally more expensive</li>
+        </ul>
+        <br>
+        <h3>Algorithms Used</h3>Evaluated multiple machine learning models:
+        <ul>
+          <li>Linear Models: Linear Regression, Ridge, Lasso</li>
+          <li>Nearest Neighbors: KNeighborsRegressor</li>
+          <li>Tree-Based Models: Decision Tree, Random Forest, Gradient Boosting, AdaBoost, Extra Trees</li>
+          <li>Support Vector Machines: SVR</li>
+          <li>Boosting Algorithms: XGBRegressor</li>
+        </ul>
+        <br>
+        <h3>Preprocessing Techniques</h3>
+        <ul>
+          <li>One-Hot Encoding for categorical features</li>
+          <li>Column Transformation for different feature types</li>
+          <li>Label Encoding for ordinal features</li>
+          <li>Feature Scaling using StandardScaler</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="project-sidebar">
+      <div class="project-links" data-aos="fade-left">
+        <a href="#" class="btn btn-github">
+          <i class="fab fa-github"></i> View Code
+        </a>
+        <a href="#" class="btn btn-demo">
+          <i class="fas fa-external-link-alt"></i> Live Demo
+        </a>
+      </div>
+
+      <div class="project-stats" data-aos="fade-left" data-aos-delay="100">
+        <div class="stat">
+          <h3>90%</h3>
+          <p>Accuracy</p>
+        </div>
+        <div class="stat">
+          <h3>12+</h3>
+          <p>Features</p>
+        </div>
+        <div class="stat">
+          <h3>XGBoost</h3>
+          <p>Best Model</p>
+        </div>
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Algorithms Tested</p>
+        </div>
+      </div>
+      <br>
+      <div class="key-findings" data-aos="fade-left" data-aos-delay="200">
+        <h3>Key Findings</h3>
+        <ul>
+          <li>Notebooks are the most common laptop type (55.8%)</li>
+          <li>Touchscreen laptops command premium prices</li>
+          <li>8GB RAM is the most popular configuration</li>
+          <li>Nvidia GPUs correlate with higher prices</li>
+          <li>PPI (Pixels Per Inch) significantly impacts price</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="../js/project.js"></script>
+</body>
+
+</html>
