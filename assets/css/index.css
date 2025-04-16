@@ -151,40 +151,64 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(15, 23, 42, 0.98);
+    /* Matching footer gradient start color with slight transparency */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     transition: var(--transition);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* subtle border */
 }
 
 nav.scrolled {
-    box-shadow: var(--shadow);
+    background: rgba(15, 23, 42, 0.98);
+    /* Solid color when scrolled */
+    box-shadow: var(--shadow-xl);
 }
 
 nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
+    /* Slightly reduced padding */
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--lighter);
+    /* White text */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
+.logo .highlight {
+    color: var(--primary-light);
+    /* Accent color for logo */
+}
+
 
 nav ul {
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 nav ul li a {
     font-weight: 500;
+    color: var(--light);
+    /* Light text color */
     position: relative;
     padding: 5px 0;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--primary-light);
+    /* Accent color on hover */
 }
 
 nav ul li a::after {
@@ -194,12 +218,19 @@ nav ul li a::after {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary);
+    background: var(--primary-light);
+    /* Matching hover color */
     transition: var(--transition);
 }
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+/* Add a subtle glow effect on active nav item */
+nav ul li a.active {
+    color: var(--primary-light);
+    text-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
 }
 
 /* ==================== */
