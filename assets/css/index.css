@@ -1363,3 +1363,58 @@ footer p {
         padding: 30px 20px;
     }
 }
+/* Enhanced GIF Styling */
+.gif-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #0f172a; /* Dark background for better GIF contrast */
+}
+
+.giphy-embed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05); /* Slight zoom to remove potential black borders */
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .giphy-embed {
+    transform: scale(1.08);
+}
+
+/* Optimized overlay for GIF backgrounds */
+.project-overlay {
+    background: linear-gradient(to top, 
+                rgba(15, 23, 42, 0.95) 20%, 
+                transparent 80%);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+/* Loading state */
+.gif-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a);
+    background-size: 400% 400%;
+    animation: gradientBG 3s ease infinite;
+    z-index: 0;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hide the loading state when GIF loads */
+.gif-container.loaded::after {
+    display: none;
+}

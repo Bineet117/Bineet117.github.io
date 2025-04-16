@@ -62,3 +62,15 @@ filterButtons.forEach(button => {
         });
     });
 });
+
+// giphy loader
+document.addEventListener('DOMContentLoaded', function() {
+    const gifContainers = document.querySelectorAll('.gif-container');
+    
+    gifContainers.forEach(container => {
+        const iframe = container.querySelector('iframe');
+        iframe.onload = function() {
+            container.classList.add('loaded');
+        };
+    });
+});
