@@ -68,43 +68,41 @@
  }
 
  .header-image-container {
-     width: 55%;
-     min-height: 400px;
-     /* Minimum height to maintain structure */
-     border-radius: var(--border-radius);
-     overflow: visible;
-     /* Ensures nothing gets clipped */
-     box-shadow: var(--shadow-xl);
-     position: relative;
-     background: transparent;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding: 20px;
-     /* Adds some breathing room */
-     margin: 20px 0;
-     /* Adds vertical spacing */
- }
+    width: 55%; /* Adjust based on layout needs */
+    aspect-ratio: 16/9; /* Perfect 16:9 ratio */
+    max-height: 500px; /* Optional max height */
+    min-height: 300px; /* Fallback for older browsers */
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    position: relative;
+    background: rgba(0, 0, 0, 0.1); /* Visible if images don't fill */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
- .rotating-image {
-     max-width: none;
-     /* Removed max-width constraint */
-     max-height: none;
-     /* Removed max-height constraint */
-     width: 100%;
-     /* Allow to take full container width */
-     height: auto;
-     /* Maintain aspect ratio */
-     object-fit: contain;
-     opacity: 0;
-     transition: opacity 1s ease-in-out;
-     position: absolute;
-     background: transparent;
- }
+.rotating-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* No cropping */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    background: transparent;
+}
 
- .rotating-image.active {
-     opacity: 1;
- }
+.rotating-image.active {
+    opacity: 1;
+    z-index: 1;
+}
+.header-image-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
 
  .back-btn {
      display: inline-flex;
