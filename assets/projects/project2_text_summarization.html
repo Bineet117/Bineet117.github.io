@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarization | Bineet's Portfolio</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body class="project-page">
+    <!-- Project Header with Larger Rotating Images -->
+    <header class="project-header">
+        <div class="container">
+            <div class="header-content animate__animated animate__fadeIn">
+                <div class="header-text">
+                    <a href="../../index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Portfolio
+                    </a>
+                    <h1>Text Summarization</h1>
+                    <div class="project-meta">
+                        <span class="category">NLP</span>
+                        <span class="date">2023</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>NLTK</span>
+                        <span>Scikit-learn</span>
+                        <span>Transformers</span>
+                        <span>BeautifulSoup</span>
+                    </div>
+                </div>
+                <div class="header-image-container">
+                    <img src="../images/textsum_1.png" alt="Text Summarization 1" class="rotating-image active"
+                        width="1920" height="1080">
+                    <img src="../images/textsum_2.png" alt="Text Summarization 2" class="rotating-image" width="1920"
+                        height="1080">
+                    <img src="../images/textsum_3.png" alt="Text Summarization 3" class="rotating-image" width="1920"
+                        height="1080">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="project-content container">
+        <main class="project-details">
+            <section data-aos="fade-up">
+                <h2>About the Project</h2>
+                <p>This project is a comprehensive exploration of text summarization techniques using both traditional
+                    Natural Language Processing (NLP) and state-of-the-art transformer models. It demonstrates how to
+                    extract relevant text from online sources and generate concise summaries using various methods.</p>
+                <p>It includes both extractive and abstractive summarization techniques, and compares their performance.
+                </p>
+            </section>
+
+            <!-- <div class="project-gallery">
+        <img src="../images/laptop_project_1.png" alt="Data Visualization" data-aos="fade-up" data-aos-delay="100">
+        <img src="../images/laptop_project_2.png" alt="Model Performance" data-aos="fade-up" data-aos-delay="200">
+      </div> -->
+
+            <section data-aos="fade-up">
+                <h2>Project Goals</h2>
+                <ul>
+                    <li>To explore and implement both extractive and abstractive summarization techniques.</li>
+                    <li>To evaluate performance of different models on real-world web articles.</li>
+                    <li>To build a user-friendly interface using Streamlit for quick summarization.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>Python:</strong> Programming language used to implement the project.</li>
+                    <li><strong>NLTK:</strong> Used for traditional NLP operations like tokenization and frequency
+                        analysis.</li>
+                    <li><strong>Scikit-learn:</strong> Used for text vectorization (TF-IDF) in extractive summarization.
+                    </li>
+                    <li><strong>Transformers:</strong> HuggingFace models like BART and T5 for abstractive
+                        summarization.</li>
+                    <li><strong>BeautifulSoup:</strong> Used for scraping and extracting web article content.</li>
+                    <li><strong>Streamlit:</strong> Front-end interface to input URLs and get summaries.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Approach</h2>
+                <h3>Extractive Summarization</h3>
+                <ul>
+                    <li>Scraped article content using <strong>BeautifulSoup</strong>.</li>
+                    <li>Cleaned and tokenized text using <strong>NLTK</strong>.</li>
+                    <li>Generated sentence scores using TF-IDF and selected top-n sentences as summary.</li>
+                </ul>
+                <br>
+                <h3>Abstractive Summarization</h3>
+                <ul>
+                    <li>Used HuggingFace transformer models like <strong>BART</strong> and <strong>T5</strong>.</li>
+                    <li>Fine-tuned model on sample data for improved summaries.</li>
+                    <li>Generated human-like, concise summaries with contextual understanding.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Results & Insights</h2>
+                <ul>
+                    <li>Extractive summaries tend to be longer but accurate to the source.</li>
+                    <li>Abstractive models provided more readable summaries, closer to human writing style.</li>
+                    <li>Streamlit interface was intuitive and fast, allowing quick summaries of web articles.</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="project-sidebar">
+            <div class="project-links" data-aos="fade-left">
+                <a href="#" class="btn btn-github">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+                <a href="#" class="btn btn-demo">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+            </div>
+
+            <div class="project-stats" data-aos="fade-left" data-aos-delay="100">
+                <div class="stat">
+                    <h3>2+</h3>
+                    <p>Summarization Models</p>
+                </div>
+                <div class="stat">
+                    <h3>2</h3>
+                    <p>Approaches Used</p>
+                </div>
+                <div class="stat">
+                    <h3>Real-Time</h3>
+                    <p>Summarization</p>
+                </div>
+                <div class="stat">
+                    <h3>Streamlit</h3>
+                    <p>User Interface</p>
+                </div>
+            </div>
+            <br>
+            <div class="key-findings" data-aos="fade-left" data-aos-delay="200">
+                <h3>Key Findings</h3>
+                <ul>
+                    <li>Abstractive summaries are more human-like but need more resources.</li>
+                    <li>Extractive methods are faster and require fewer dependencies.</li>
+                    <li>TF-IDF scoring works well for factual and structured content.</li>
+                    <li>BART generated concise and relevant summaries with context understanding.</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/project.js"></script>
+</body>
+
+</html>
