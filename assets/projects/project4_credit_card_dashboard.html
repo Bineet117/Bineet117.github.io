@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Credit Card Dashboards | Bineet's Portfolio</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body class="project-page">
+    <!-- Project Header -->
+    <header class="project-header">
+        <div class="container">
+            <div class="header-content animate__animated animate__fadeIn">
+                <div class="header-text">
+                    <a href="../../index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Portfolio
+                    </a>
+                    <h1>Customer Credit Card Dashboards</h1>
+                    <div class="project-meta">
+                        <span class="category">Data Visualization</span>
+                        <span class="category">Business Intelligence</span>
+                        <span class="date">2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Data Modeling</span>
+                        <span>Excel</span>
+                    </div>
+                </div>
+                <div class="header-image-container">
+                    <img src="../images/Credit_Card_Dashboard_1.png" alt="Credit Card Dashboard"
+                        class="rotating-image active" width="1920" height="1080">
+                    <img src="../images/Credit_Card_Dashboard_2.png" alt="Credit Card Dashboard"
+                        class="rotating-image active" width="1920" height="1080">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="project-content container">
+        <main class="project-details">
+            <section data-aos="fade-up">
+                <h2>🔎 Project Overview</h2>
+                <p>The objective of this project is to develop a comprehensive credit card dashboard that delivers
+                    real-time insights into critical performance metrics, trends, and customer details. This dashboard
+                    empowers stakeholders to effectively monitor and analyze credit card operations, ensuring informed
+                    decision-making and operational efficiency.</p>
+            </section>
+
+            <section data-aos="fade-up">
+                <h2>📊 Dataset Description</h2>
+                <h3>Credit Card Details Dataset</h3>
+                <p>Contains key metrics like <code>Client_Num</code>, <code>Card_Category</code>,
+                    <code>Annual_Fees</code>, <code>Credit_Limit</code>, <code>Total_Revolving_Bal</code>,
+                    <code>Total_Trans_Amt</code>, and more.
+                </p>
+
+                <h3>Customer Details Dataset</h3>
+                <p>Includes demographic information like <code>Customer_Age</code>, <code>Gender</code>,
+                    <code>Education_Level</code>, <code>Income</code>, and <code>Cust_Satisfaction_Score</code>.
+                </p>
+
+                <div class="dataset-links">
+                    <a href="https://github.com/Bineet117/Customer_CreditCard_Dashboards/blob/07ee47e0e7acfe76e94693609e5775a8c7a4aee8/credit_card_detail.xlsx"
+                        class="btn btn-outline">
+                        <i class="fas fa-database"></i> Credit Card Dataset
+                    </a>
+                    <a href="https://github.com/Bineet117/Customer_CreditCard_Dashboards/blob/07ee47e0e7acfe76e94693609e5775a8c7a4aee8/cust_detail.csv"
+                        class="btn btn-outline">
+                        <i class="fas fa-users"></i> Customer Details
+                    </a>
+                </div>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <style>
+                    .visualization-grid {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 1.5rem;
+                        margin-top: 1rem;
+                    }
+
+                    .viz-card {
+                        background: #fff;
+                        border: 1px solid #ddd;
+                        border-radius: 8px;
+                        padding: 1rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        font-weight: 500;
+                        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+                    }
+
+                    .viz-card i {
+                        font-size: 1.5rem;
+                        color: #4a90e2;
+                    }
+
+                    /* Optional: Responsive for smaller screens */
+                    @media (max-width: 600px) {
+                        .visualization-grid {
+                            grid-template-columns: 1fr;
+                        }
+                    }
+                </style>
+
+                <h2>📊 Visualizations Used</h2>
+                <div class="visualization-grid">
+                    <div class="viz-card">
+                        <i class="fas fa-chart-bar"></i>
+                        <p>Bar & Column Charts</p>
+                    </div>
+                    <div class="viz-card">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Line Charts</p>
+                    </div>
+                    <div class="viz-card">
+                        <i class="fas fa-table"></i>
+                        <p>Tables</p>
+                    </div>
+                    <div class="viz-card">
+                        <i class="fas fa-sliders-h"></i>
+                        <p>Slicers</p>
+                    </div>
+                    <div class="viz-card">
+                        <i class="fas fa-bullseye"></i>
+                        <p>KPI Indicators</p>
+                    </div>
+                    <div class="viz-card">
+                        <i class="fas fa-id-card"></i>
+                        <p>Cards</p>
+                    </div>
+                    <div class="viz-card">
+                        <i class="fas fa-project-diagram"></i>
+                        <p>Treemaps</p>
+                    </div>
+                </div>
+            </section>
+            <br>
+
+            <section data-aos="fade-up">
+                <h2>📝 Dashboard Insights</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <h3>Revenue Analysis</h3>
+                        <ul>
+                            <li>Total Revenue: <strong>$55.3 million</strong></li>
+                            <li>Bills: Largest expense category (<strong>$14 million</strong>)</li>
+                            <li>Swipe Transactions lead revenue (<strong>$35 million</strong>)</li>
+                        </ul>
+                    </div>
+                    <div class="insight-card">
+                        <h3>Customer Segmentation</h3>
+                        <ul>
+                            <li>Top Spenders: Age 40-50 (<strong>$24 million</strong>)</li>
+                            <li>Businessmen generate <strong>$17 million</strong></li>
+                            <li>Gender Split: Male (<strong>$31M</strong>) vs Female (<strong>$26M</strong>)</li>
+                        </ul>
+                    </div>
+                    <div class="insight-card">
+                        <h3>Temporal Trends</h3>
+                        <ul>
+                            <li>Third Quarter had highest revenue</li>
+                            <li>Female transaction volume typically lower than males</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="project-sidebar">
+            <div class="project-links" data-aos="fade-left">
+                <a href="https://github.com/Bineet117/Customer_CreditCard_Dashboards" class="btn btn-github">
+                    <i class="fab fa-github"></i> View Project
+                </a>
+                <a href="https://github.com/Bineet117/Customer_CreditCard_Dashboards/blob/main/README.md"
+                    class="btn btn-demo">
+                    <i class="fas fa-book"></i> Documentation
+                </a>
+            </div>
+
+            <div class="project-stats" data-aos="fade-left" data-aos-delay="100">
+                <div class="stat">
+                    <h3>$55.3M</h3>
+                    <p>Total Revenue</p>
+                </div>
+                <div class="stat">
+                    <h3>2</h3>
+                    <p>Integrated Datasets</p>
+                </div>
+                <div class="stat">
+                    <h3>7+</h3>
+                    <p>Visualization Types</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Stakeholder Satisfaction</p>
+                </div>
+            </div>
+            <br>
+            <div class="key-findings" data-aos="fade-left" data-aos-delay="200">
+                <h3>Key Highlights</h3>
+                <ul>
+                    <li>Identified top revenue-generating customer segments</li>
+                    <li>Revealed quarterly spending patterns</li>
+                    <li>Highlighted gender-based spending differences</li>
+                    <li>Pinpointed most profitable transaction types</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>
