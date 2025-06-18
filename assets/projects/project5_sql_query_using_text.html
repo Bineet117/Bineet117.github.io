@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natural Language to SQL | Bineet's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/project.css" />
+</head>
+
+<body class="project-page">
+    <header class="project-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-text">
+                    <a href="../../index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Portfolio
+                    </a>
+                    <h1>🧠 Natural Language to SQL Query</h1>
+                    <div class="project-meta">
+                        <span class="category">LLM App</span>
+                        <span class="category">Streamlit</span>
+                        <span class="date">2025</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>Streamlit</span>
+                        <span>OpenAI GPT</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="header-image-container">
+                    <img src="../images/sql_query_1.png" alt="Credit Card Dashboard" class="rotating-image active"
+                        width="1920" height="1080">
+                    <img src="../images/sql_query_2.png" alt="Credit Card Dashboard" class="rotating-image active"
+                        width="1920" height="1080">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="project-content container">
+        <main class="project-details">
+            <section>
+                <h2>🔎 Project Overview</h2>
+                <p>This project is a Streamlit-powered web app that allows users to ask questions in plain English,
+                    which are then converted into executable SQL queries using OpenAI's GPT model via LangChain. The
+                    results are executed on a connected SQL database and displayed in a conversational chat interface.
+                </p>
+            </section>
+
+            <section>
+                <h2>📽️ Demo</h2>
+                <p>
+                    🎥 Watch the app in action:
+                    <a href="https://drive.google.com/file/d/1-CYeBzEmFF_npsHstWxHeUI2EzxeTWFK/view?usp=drive_link"
+                        target="_blank">View Demo</a>
+                </p>
+            </section>
+
+            <section>
+                <h2>🚀 Features</h2>
+                <ul>
+                    <li>🔐 Secure login to your own SQL database</li>
+                    <li>💬 Ask questions in natural language</li>
+                    <li>🧠 LLM (GPT-3.5 Turbo via LangChain) generates SQL queries</li>
+                    <li>📋 Dynamically fetches relevant table and column names</li>
+                    <li>✅ Executes SQL queries and returns results instantly</li>
+                    <li>🕒 Chat history with question, generated SQL, and result</li>
+                    <li>🎨 Custom styled UI with a smooth user experience</li>
+                </ul>
+            </section>
+            <br>
+            <section>
+                <h2>🛠️ Tech Stack</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Component</th>
+                            <th>Tool/Library</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Frontend</td>
+                            <td>Streamlit</td>
+                        </tr>
+                        <tr>
+                            <td>Language Model</td>
+                            <td>OpenAI GPT-3.5 Turbo</td>
+                        </tr>
+                        <tr>
+                            <td>LLM Framework</td>
+                            <td>LangChain</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>MySQL (or any SQL)</td>
+                        </tr>
+                        <tr>
+                            <td>Environment</td>
+                            <td>dotenv</td>
+                        </tr>
+                        <tr>
+                            <td>Backend Language</td>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>Styling</td>
+                            <td>Custom CSS in Streamlit</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <br>
+            <section>
+                <h2>🔧 Setup Instructions</h2>
+                <ol>
+                    <li><strong>Clone the Repository:</strong>
+                        <pre><code>git clone https://github.com/yourusername/nl-to-sql-streamlit.git
+cd nl-to-sql-streamlit</code></pre>
+                    </li>
+                    <li><strong>Create and Activate a Virtual Environment:</strong>
+                        <pre><code>python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate</code></pre>
+                    </li>
+                    <li><strong>Install Dependencies:</strong>
+                        <pre><code>pip install -r requirements.txt</code></pre>
+                    </li>
+                    <li><strong>Set Environment Variables:</strong>
+                        <p>Create a <code>.env</code> file in the project root:</p>
+                        <pre><code>OPENAI_API_KEY=your_openai_key
+LANGSMITH_API_KEY=your_langsmith_key
+LANGSMITH_PROJECT=your_project_name</code></pre>
+                    </li>
+                    <li><strong>Run the App:</strong>
+                        <pre><code>streamlit run app.py</code></pre>
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>🧾 File Structure</h2>
+                <pre><code>.
+├── app.py                # Main Streamlit app
+├── sql.py                # SQL connection utility
+├── .env                  # API keys (not included in repo)
+├── requirements.txt      # Python dependencies
+└── README.md             # You're reading it
+</code></pre>
+            </section>
+
+
+        </main>
+        <!-- Sidebar -->
+        <aside class="project-sidebar">
+            <div class="project-links" data-aos="fade-left">
+                <a href="https://github.com/Bineet117/querying_from_db_using_langchain" class="btn btn-github">
+                    <i class="fab fa-github"></i> View Project
+                </a>
+                <a href="https://drive.google.com/file/d/1-CYeBzEmFF_npsHstWxHeUI2EzxeTWFK/view?usp=drive_link"
+                    class="btn btn-demo">
+                    <i class="fas fa-play-circle"></i> Watch Demo
+                </a>
+            </div>
+
+            <div class="project-stats" data-aos="fade-left" data-aos-delay="100">
+                <div class="stat">
+                    <h3>1</h3>
+                    <p>LLM-Powered Interface</p>
+                </div>
+                <div class="stat">
+                    <h3>Real-Time</h3>
+                    <p>SQL Execution</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>No-Code Querying</p>
+                </div>
+                <div class="stat">
+                    <h3>7+</h3>
+                    <p>Key Features</p>
+                </div>
+            </div>
+            <br>
+            <div class="key-findings" data-aos="fade-left" data-aos-delay="200">
+                <h3>Key Highlights</h3>
+                <ul>
+                    <li>Convert questions to SQL using GPT</li>
+                    <li>Live database querying</li>
+                    <li>Secure and user-friendly interface</li>
+                    <li>Open-source & customizable</li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+
+</html>
