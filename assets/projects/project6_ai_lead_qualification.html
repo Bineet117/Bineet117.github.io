@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Lead Qualification | Bineet's Portfolio</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body class="project-page">
+    <!-- Project Header with Larger Rotating Images -->
+    <header class="project-header">
+        <div class="container">
+            <div class="header-content animate__animated animate__fadeIn">
+                <div class="header-text">
+                    <a href="../../index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Portfolio
+                    </a>
+                    <h1>AI-Powered Lead Qualification</h1>
+                    <div class="project-meta">
+                        <span class="category">Generative AI</span>
+                        <span class="date">2025</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>LangChain</span>
+                        <span>GCP Vertex AI</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>FAISS</span>
+                    </div>
+                </div>
+                <div class="header-image-container">
+                    <img src="../images/lead_qualification.png" alt="AI Lead Qualification Dashboard"
+                        class="rotating-image active" width="1920" height="1080">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <div class="project-content container">
+        <main class="project-details">
+            <section data-aos="fade-up">
+                <h2>About the Project</h2>
+                <p>This project is an advanced AI-driven system designed to automate and optimize the lead qualification
+                    and outreach process.
+                    It leverages Generative AI and vector similarity scoring to score leads, enrich data, and generate
+                    personalized email outreach.</p>
+                <p>The system was built to address the scalability challenges of processing over 50k leads per month,
+                    significantly reducing manual effort.</p>
+            </section>
+
+
+            <section data-aos="fade-up">
+                <h2>Project Goals</h2>
+                <ul>
+                    <li>To improve lead qualification accuracy using AI-driven scoring.</li>
+                    <li>To automate the enrichment of lead data from various sources.</li>
+                    <li>To generate personalized, context-aware email outreach content.</li>
+                    <li>To reduce the manual operational overhead of the sales team.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>LangChain:</strong> Framework for building applications with LLMs.</li>
+                    <li><strong>GCP Vertex AI:</strong> Used for hosting and invoking Generative AI models.</li>
+                    <li><strong>FAISS:</strong> Vector database for efficient similarity search and scoring.</li>
+                    <li><strong>PostgreSQL:</strong> Relational database for storing lead data and pipeline state.</li>
+                    <li><strong>Docker & EC2:</strong> Containerization and deployment on AWS infrastructure.</li>
+                    <li><strong>Scrapin API:</strong> Used for data collection and enrichment.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Approach</h2>
+                <h3>Lead Enrichment & Scoring</h3>
+                <ul>
+                    <li>Implemented a pipeline to enrich lead data using <strong>Scrapin API</strong>.</li>
+                    <li>Used <strong>FAISS</strong> for vector similarity scoring to identify high-intent leads.</li>
+                    <li>Ranked leads based on engagement potential and fit.</li>
+                </ul>
+                <br>
+                <h3>GenAI Outreach Generation</h3>
+                <ul>
+                    <li>Built a GenAI email generator using <strong>Vertex AI</strong> and marketing frameworks like
+                        AIDA and BAB.</li>
+                    <li>Automated the creation of personalized email drafts for top-tier leads.</li>
+                </ul>
+                <br>
+                <h3>Deployment & MLOps</h3>
+                <ul>
+                    <li>Deployed the entire system on <strong>AWS EC2</strong> using Docker containers.</li>
+                    <li>Implemented <strong>GitHub Actions</strong> for CI/CD and S3 for data versioning.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Results & Insights</h2>
+                <ul>
+                    <li><strong>60% improvement</strong> in lead qualification accuracy.</li>
+                    <li><strong>80% reduction</strong> in manual outreach planning effort.</li>
+                    <li>Successfully scaled to process <strong>50k+ leads/month</strong>.</li>
+                    <li>45% improvement in overall lead conversion rates.</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="project-sidebar">
+            <div class="project-links" data-aos="fade-left">
+                <!-- Links placeholder if available in future -->
+                <a href="#" class="btn btn-github disabled">
+                    <i class="fab fa-github"></i> Private Repository
+                </a>
+            </div>
+
+            <div class="project-stats" data-aos="fade-left" data-aos-delay="100">
+                <div class="stat">
+                    <h3>60%</h3>
+                    <p>Accuracy Boost</p>
+                </div>
+                <div class="stat">
+                    <h3>80%</h3>
+                    <p>Effort Reduced</p>
+                </div>
+                <div class="stat">
+                    <h3>50k+</h3>
+                    <p>Leads/Month</p>
+                </div>
+                <div class="stat">
+                    <h3>45%</h3>
+                    <p>Conversion Rate</p>
+                </div>
+            </div>
+            <br>
+            <div class="key-findings" data-aos="fade-left" data-aos-delay="200">
+                <h3>Key Findings</h3>
+                <ul>
+                    <li>Vector similarity is highly effective for lead scoring vs rule-based methods.</li>
+                    <li>Personalized AI-generated emails have significantly higher open rates.</li>
+                    <li>Automated enrichment is critical for accurate scoring at scale.</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/project.js"></script>
+</body>
+
+</html>

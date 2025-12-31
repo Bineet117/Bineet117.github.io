@@ -32,7 +32,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
 // Typed.js initialization
 document.addEventListener('DOMContentLoaded', function () {
     const typed = new Typed('.typed-text-output', {
-        strings: ['Data Scientist', 'Machine Learning Engineer', 'AI Enthusiast'],
+        strings: ['Data Scientist', 'AI/ML Engineer', 'Generative AI Developer'],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true,
@@ -64,12 +64,12 @@ filterButtons.forEach(button => {
 });
 
 // giphy loader
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const gifContainers = document.querySelectorAll('.gif-container');
-    
+
     gifContainers.forEach(container => {
         const iframe = container.querySelector('iframe');
-        iframe.onload = function() {
+        iframe.onload = function () {
             container.classList.add('loaded');
         };
     });

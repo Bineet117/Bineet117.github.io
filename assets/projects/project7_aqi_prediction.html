@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQI Prediction | Bineet's Portfolio</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body class="project-page">
+    <header class="project-header">
+        <div class="container">
+            <div class="header-content animate__animated animate__fadeIn">
+                <div class="header-text">
+                    <a href="../../index.html" class="back-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Portfolio
+                    </a>
+                    <h1>AQI Prediction & Forecasting</h1>
+                    <div class="project-meta">
+                        <span class="category">Machine Learning</span>
+                        <span class="date">2024</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>XGBoost</span>
+                        <span>LSTM</span>
+                        <span>ARIMA</span>
+                        <span>Streamlit</span>
+                        <span>Pandas</span>
+                    </div>
+                </div>
+                <div class="header-image-container">
+                    <img src="../images/aqi_prediction_project.png" alt="AQI Dashboard" class="rotating-image active"
+                        width="1920" height="1080">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="project-content container">
+        <main class="project-details">
+            <section data-aos="fade-up">
+                <h2>About the Project</h2>
+                <p>This project addresses environmental monitoring by predicting and forecasting the Air Quality Index
+                    (AQI) for over 203 cities.</p>
+                <p>It combines traditional machine learning models with time-series forecasting techniques to provide
+                    accurate, real-time pollution insights via an interactive dashboard.</p>
+            </section>
+
+            <section data-aos="fade-up">
+                <h2>Project Goals</h2>
+                <ul>
+                    <li>To predict AQI with high accuracy using pollution and weather data.</li>
+                    <li>To forecast future air quality trends using time-series analysis.</li>
+                    <li>To visualize real-time data on an interactive map and dashboard.</li>
+                    <li>To implement MLOps practices for model monitoring and retraining.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>XGBoost & Random Forest:</strong> For regression tasks and AQI prediction.</li>
+                    <li><strong>LSTM & ARIMA:</strong> For time-series forecasting of pollution levels.</li>
+                    <li><strong>Pandas & NumPy:</strong> For preprocessing 575k+ pollution and weather records.</li>
+                    <li><strong>Streamlit:</strong> For deploying the interactive user dashboard.</li>
+                    <li><strong>MLOps:</strong> Pipelines for model drift detection and automated retraining.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Approach</h2>
+                <h3>Data Engineering</h3>
+                <ul>
+                    <li>Preprocessed over <strong>5.75 lakh</strong> records.</li>
+                    <li>Engineered fusion features combining pollution and weather data.</li>
+                    <li>Performed statistical analysis to identify key drivers of AQI.</li>
+                </ul>
+                <br>
+                <h3>Modeling</h3>
+                <ul>
+                    <li>Built <strong>Random Forest</strong> and <strong>XGBoost</strong> models for current AQI
+                        prediction.</li>
+                    <li>Implemented <strong>ARIMA</strong>, <strong>GRU</strong>, and <strong>LSTM</strong> networks for
+                        forecasting future trends.</li>
+                </ul>
+                <br>
+                <h3>Deployment</h3>
+                <ul>
+                    <li>Developed an interactive web dashboard using <strong>Streamlit</strong>.</li>
+                    <li>Deployed the application with real-time data integration.</li>
+                </ul>
+            </section>
+            <br>
+            <section data-aos="fade-up">
+                <h2>Results & Insights</h2>
+                <ul>
+                    <li>Achieved <strong>87% accuracy</strong> in AQI prediction.</li>
+                    <li>Successfully scaled to cover data for <strong>203 cities</strong>.</li>
+                    <li>Real-time dashboard provides actionable insights for environmental monitoring.</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="project-sidebar">
+            <div class="project-links" data-aos="fade-left">
+                <a href="#" class="btn btn-github disabled">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+            </div>
+
+            <div class="project-stats" data-aos="fade-left" data-aos-delay="100">
+                <div class="stat">
+                    <h3>87%</h3>
+                    <p>Accuracy</p>
+                </div>
+                <div class="stat">
+                    <h3>5.75L+</h3>
+                    <p>Records</p>
+                </div>
+                <div class="stat">
+                    <h3>203</h3>
+                    <p>Cities Covered</p>
+                </div>
+                <div class="stat">
+                    <h3>Real-Time</h3>
+                    <p>Dashboard</p>
+                </div>
+            </div>
+            <br>
+            <div class="key-findings" data-aos="fade-left" data-aos-delay="200">
+                <h3>Key Findings</h3>
+                <ul>
+                    <li>Weather parameters significantly influence pollution levels.</li>
+                    <li>Ensemble methods (XGBoost) outperformed single models for AQI prediction.</li>
+                    <li>LSTM showed superior performance in capturing long-term temporal dependencies.</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../js/project.js"></script>
+</body>
+
+</html>
