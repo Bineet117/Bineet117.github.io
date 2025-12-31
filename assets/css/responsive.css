@@ -1,0 +1,138 @@
+/* ==================== */
+/* Responsive Design */
+/* ==================== */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: var(--text-main);
+        font-size: 1.5rem;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    nav ul {
+        display: none;
+        /* Hidden by default on mobile */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70%;
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(15px);
+        padding-top: 80px;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+        gap: 20px;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+        /* Slide out to right */
+    }
+
+    nav ul.active {
+        display: flex;
+        transform: translateX(0);
+        /* Slide in */
+    }
+
+    /* Hero Section */
+    .hero {
+        padding-top: 100px;
+        text-align: center;
+        height: auto;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-content {
+        display: contents;
+        /* Allow children to be reordered in the parent flex container */
+    }
+
+    /* Text elements default order is 0, so they stay at top */
+
+    .hero-image {
+        order: 1;
+        /* Place image after text */
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .hero-buttons {
+        order: 2;
+        /* Place buttons after image */
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        /* Ensure it centers properly */
+        margin-top: 20px;
+    }
+
+    .display-name {
+        font-size: 2.5rem;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    /* Skills & General Grid */
+    .skills-grid,
+    .projects-grid,
+    .certs-grid {
+        grid-template-columns: 1fr;
+        /* Stack items */
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Experience */
+    /* Experience & Education */
+    .experience-card {
+        padding: 20px;
+        /* Reduce padding */
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        /* Left align to match border accent */
+        text-align: left;
+        gap: 10px;
+    }
+
+    .experience-icon {
+        margin-bottom: 5px;
+    }
+
+    .experience-details ul li {
+        text-align: left;
+        /* Keep this */
+    }
+
+    /* Contact */
+    form {
+        padding: 25px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}

@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
@@ -20,7 +21,10 @@
     <nav>
         <div class="container">
             <a href="#" class="logo">Portfolio</a>
-            <ul>
+            <button class="menu-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -36,7 +40,7 @@
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content" data-aos="fade-right">
-                <h3 class="text-primary" data-aos="fade-down">I'm</h3>
+                <!-- <h3 class="text-primary" data-aos="fade-down">I'm</h3> -->
                 <h1 class="display-name" data-aos="fade-down">Bineet Kumar Gupta</h1>
                 <h2 class="typed-text-output" data-aos="fade-down"></h2>
                 <!-- <div class="typed-text d-none">Data Scientist, Machine Learning Engineer, AI Enthusiast</div> -->
@@ -554,6 +558,7 @@
     <!-- Typed.js for typing animation -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/mobile-nav.js"></script>
 </body>
 
 </html>
